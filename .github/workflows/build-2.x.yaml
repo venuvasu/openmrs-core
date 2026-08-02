@@ -32,7 +32,7 @@ jobs:
       - name: Setup JDK
         uses: actions/setup-java@v5
         with:
-          distribution: 'adopt'
+          distribution: 'corretto'
           java-version: ${{ matrix.java-version }}
       - name: Cache Maven packages
         uses: actions/cache@v4
